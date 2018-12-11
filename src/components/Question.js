@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 class Question extends Component {
   render() {
     return (
-      <div />
+      <div className="App">
+        <div>Is 1 greater than 2?</div>
+      </div>
     );
   }
 }
