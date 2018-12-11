@@ -14,3 +14,8 @@ it('renders without crashing', () => {
   ReactDOM.render(<Question />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
+it('has a button', () => {
+  const wrap = mount(<Question />)
+  expect(wrap.find('button').text()).toEqual('YES')
+});
